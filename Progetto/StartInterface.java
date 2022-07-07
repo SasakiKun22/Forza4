@@ -3,30 +3,40 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
+/*  this class represents the first window of the game,
+    you can choose the name of the players ,save the game,
+    reload a game, and start the game  */
 public class StartInterface extends JFrame implements ActionListener{
+    //instantiation of variables
+    private TextFieldPanel textFieldPanel;  //text input panel
+    private TextArea textArea;              //text area panel
+    private JButton buttonP1;               //color of Player1
+    private JButton buttonP2;               //color of Player2
+    private JButton start;                  //start button
+    private JButton loadGame;               // load game button
+    private JButton save;                   //save button
+    private JMenuBar menuBar;               //menubar
+    private JMenuItem help;                 //help button
+    private JMenuItem exit;                 //exit button
 
-    private TextFieldPanel textFieldPanel;
-    private TextArea textArea;
-    private JButton buttonP1;
-    private JButton buttonP2;
-    private JButton start;
-    private JButton loadGame;
-    private JButton save;
-    private JMenuBar menuBar;
-    private JMenuItem help;
-    private JMenuItem exit;
+    //first game matrix initialized with all zeros
     private int[][] matrix = {{0,0,0,0,0,0,0}, {0,0,0,0,0,0,0}, {0,0,0,0,0,0,0}, {0,0,0,0,0,0,0}, {0,0,0,0,0,0,0}, {0,0,0,0,0,0,0}};
-    private String defaultP1Name = "PLAYER1";
-    private String defaultP2Name = "PLAYER2";
+    private String defaultP1Name = "PLAYER1";   // default name of Player1
+    private String defaultP2Name = "PLAYER2";   // default name of Player2
     private String player1Name = "PLAYER1";
     private String player2Name = "PLAYER2";
-    private int turn = 1;
+    private int turn = 1;                      // turn of Player1, the latter starts by default
 
+    /*
+     Constructor of StartInterface
+     without parameters
+     */
     StartInterface() {
         super("CUSTOMIZE MATCH");
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         super.setJMenuBar(createMenuBar());
-
+        /*setBackGround() sets the background color
+         *setPreferredSize() sets the dimensions   */
         setLayout(new FlowLayout());
         textFieldPanel = new TextFieldPanel();
         textArea = new TextArea();
@@ -44,11 +54,13 @@ public class StartInterface extends JFrame implements ActionListener{
         loadGame.setPreferredSize(new Dimension(100, 40));
         menuBar = new JMenuBar();
 
-//       listeners button
+        /* Listeners Buttons:
+         * to each listener button is attributed the corresponding event through
+         */
         save.addActionListener(new SaveActionListener());
         loadGame.addActionListener(new LoadGameActionListener());
         start.addActionListener(new StartActionListener());
-
+        /*add method adds attributes corresponding to the principal frame*/
         add(textFieldPanel,BorderLayout.CENTER);
         add(buttonP1,BorderLayout.LINE_START);
         add(buttonP2,BorderLayout.LINE_END);
@@ -56,15 +68,27 @@ public class StartInterface extends JFrame implements ActionListener{
         add(BorderLayout.PAGE_END,save);
         add(BorderLayout.AFTER_LAST_LINE,loadGame);
         add(BorderLayout.AFTER_LAST_LINE,start);
-        setSize(700, 400);
-        setLocationRelativeTo(null);
-        setResizable(false);
+        setSize(700, 400);        //set the size of the frame
+        setLocationRelativeTo(null);           //set the frame in the center
+        setResizable(false);                   //set the impossibility of resizing the frame
+        //
+        //
+        //finish all the execution processes of the program by clicking on 'x'
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
+        setVisible(true);                      //set the visibility of the frame
 
     }
 
+    /**@method createMenuBar():
+    /** @param // no parameters
+     * @return // jmenubar
+    /*
+    * method to create the frame menubar,
+    * exit and help are defined and added to the jmenubar.
+    * the corresponding actionListener is added to the two buttons
+    */
     protected JMenuBar createMenuBar() {
+
         JMenuBar jmenubar = new JMenuBar();
         exit = new JMenuItem("Exit");
         help = new JMenuItem("Game Instructions");
@@ -74,18 +98,24 @@ public class StartInterface extends JFrame implements ActionListener{
         help.addActionListener(new HelpActionListener());
         return jmenubar;
     }
-
+    /** @param e event */
     public void actionPerformed(ActionEvent e){}
 
 
-
+    /** @innerclass ExitActionListener         **/
+    /** @method actionPerformed(ActionEvent e)
+    /*  exit has an event associated
+     *  clicking on the exit button will open an OptionPane
+     *  with the message "Are you sure you want to quit?" ,
+     *  if you click on yes all program processes will end */
     private class ExitActionListener implements ActionListener 
     {
-        public void actionPerformed(ActionEvent e) 
+        public void actionPerformed(ActionEvent e)
+        /** @param e **/
         {
             if(e.getSource()== exit) 
             {
-                //information = new JOptionPane();
+
                 int confirm = JOptionPane.showConfirmDialog(rootPane,"Are you sure you want to quit?","EXIT",0);
                 if(confirm == 0){
                     System.exit(0);
@@ -94,9 +124,15 @@ public class StartInterface extends JFrame implements ActionListener{
         }
     }
 
+    /** @innerclass HelpActionListener         **/
+    /** @method actionPerformed(ActionEvent e)
+    /*  help has an event associated
+     *  clicking on the help button will open an OptionPane
+     *  with the instructions of the game */
     private class HelpActionListener implements  ActionListener
     {
         public void actionPerformed(ActionEvent e)
+        /** @param e **/
         {
             if(e.getSource() == help)
             {
@@ -106,10 +142,17 @@ public class StartInterface extends JFrame implements ActionListener{
             }
         }
     }
-
+    /** @innerclass StartActionListener         **/
+    /** @method actionPerformed(ActionEvent e)
+    /*  start has an event associated
+     *  clicking on the start button will open
+     *  the real window of the game through the command
+     *  new Game(matrix, player1Name, player2Name, turn),
+     *  through this command, an object of the class Game.java is created   */
     private class StartActionListener implements  ActionListener
     {
         public void actionPerformed(ActionEvent e)
+            /* @param e **/
         {
             if (e.getSource() == start)
             {
@@ -118,10 +161,18 @@ public class StartInterface extends JFrame implements ActionListener{
             }
         }
     }
-
+    /** @innerclass SaveActionListener         **/
+    /** @method actionPerformed(ActionEvent e) **/
+    /*  save has an event associated
+     *  clicking on the save button will be saved
+     *  the names present in the textFieldPanel,
+     *  in case of not entering the names of the two players,
+     *  will be considered the default names ,
+     *  that is "Player1" and "Player2".   */
     private class SaveActionListener implements ActionListener
     {
         public void actionPerformed(ActionEvent e)
+        /** @param e **/
         {
             if (e.getSource() == save)
             {
@@ -131,10 +182,20 @@ public class StartInterface extends JFrame implements ActionListener{
         }
     }
 
-
+    /** @innerclass LoadGameActionListener         **/
+    /** @method actionPerformed(ActionEvent e)
+    /*  Inside the actionperformed is set a string
+     *  inside which there is the contents of the file "Connect4SaveFile.txt",
+     *  inside the file there are the game matrix,
+     *  the names of the two players,
+     *  and the turn of the two players.
+     *  Through the try and catch the save file is read
+     *  and the game is reopened by calling the Game class
+     *  set with different parameters */
     private class LoadGameActionListener implements ActionListener
     {
         public void actionPerformed(ActionEvent e)
+        /** @param e **/
         {
             String savaData;
             ReadFile fileReader = new ReadFile();
