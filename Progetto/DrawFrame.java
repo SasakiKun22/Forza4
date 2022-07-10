@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 
-/* A tie from a game.
+/* The following class has been created with respect to the draw of a match.
  * In the event of a tie , a panel will open with a text
  * symbolizing that the game ended with a tie */
 public class DrawFrame extends JFrame implements ActionListener{
