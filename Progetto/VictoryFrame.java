@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 
-/* The WinFrame.java class is about a player’s victory.
+/* The VictoryFrame.java class is about a player’s victory.
  * In case of victory , a panel will open with a text symbolizing
  * the victory of one of the two players.*/
 public class VictoryFrame extends JFrame implements ActionListener
