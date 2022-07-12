@@ -38,6 +38,8 @@ Before running the program make sure that:
 
 - you have the *java openjdk*, make sure that the latter is installed in the latest versions, otherwise it may cause errors while running the program.
 
+- the Connect4.png (frame icon) image is in the same directory as the jar file
+
 To run the program there are two ways:
 
 - by clicking on the jar file
@@ -59,10 +61,6 @@ Once all this is done you can start the game via the *"start"* button.
 ![Game](images/immagine_iniziale.png) 
 
 Once you click on Start you will open another window where there is the blue game* "chessboard"* with all white circles, depending on the button you click *(present at the bottom and ranging from 1 to 7)*, will be colored a circle according to the color of the player, starting from the first row at the bottom upwards.In addition to this is the "pause" button, if you click on the latter, it will open another window where you can: *"save", "save and exit", "exit ".*
-
-### TESTER CLASS
-
-TODO:
 
 ### PROJECT STATUS
 
