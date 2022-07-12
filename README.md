@@ -1,7 +1,7 @@
 # CONNECT 4
 
 <!-- QUESTO NON FUNZIONA SE NON METTI LA CARTELLA CORRETTA E LA FOTO NELLA REPOSITORY, LA STESSA COSA VALE PER TUTTE LE ALTRE FOTO CHE AVETE MESSO SOTTO -->
-![ ](/home/germanoanselmi/Scaricati/README/connect-4-g170f3efe1_640.jpg  "Connect-4")
+![Connect4](.github/connect-4-g170f3efe1_640.jpg)
 
 ## GAME DESCRIPTION
 
