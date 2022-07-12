@@ -1,6 +1,6 @@
 # CONNECT 4
 
-<!-- QUESTO NON FUNZIONA SE NON METTI LA CARTELLA CORRETTA E LA FOTO NELLA REPOSITORY, LA STESSA COSA VALE PER TUTTE LE ALTRE FOTO CHE AVETE MESSO SOTTO -->
+
 ![Connect4](images/connect-4-g170f3efe1_640.jpg)
 
 ## GAME DESCRIPTION
@@ -41,14 +41,14 @@ Before running the program make sure that:
 To run the program there are two ways:
 
 - by clicking on the jar file
-- alternatively if you are on: <!-- sono tutti uguali (?) -->
+- alternatively if you are on:
   - **LINUX:** opening the terminal and typing: `java -jar path/to/jarfile.jar`
   - **WINDOWS:** opening the cmd and typing: `java –jar path/to/jarfile.jar`
   - **MAC:** opening the terminal and typing: `java -jar path/to/jarfile.jar`
 
 ### START THE GAME
 
-![ ](/home/germanoanselmi/Scaricati/README/immagine_iniziale.png  "StartInterface") 
+![StartInterface](images/immagine_inizio.png) 
  
 Once the program runs you will start the initial game screen, where you have the option to enter the names of the two players, view the color of your checker, view the game instructions, once you have done that you must remember to save, using the *"save"* button to keep the names entered. 
 It is also possible to reload a previously saved game, in case of failure to save will open an error window.
