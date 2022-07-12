@@ -1,7 +1,7 @@
 # CONNECT 4
 
 
-![Connect4](images/connect-4-g170f3efe1_640.jpg)
+![Connect4](images/31eabf87190195.Y3JvcCwzMTA0LDI0MjgsMjU1MSwxOTA2.png)
 
 ## GAME DESCRIPTION
 
