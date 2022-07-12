@@ -1,6 +1,6 @@
 # CONNECT 4
 
-![Connect4](\home\germanoanselmi\Scaricati\README\connect-4-g170f3efe1_640.jpg  "Connect-4")
+![ ](/home/germanoanselmi/Scaricati/README/connect-4-g170f3efe1_640.jpg  "Connect-4")
 
 ## GAME DESCRIPTION
 
@@ -47,7 +47,7 @@ To run the program there are two ways:
 
 ### START THE GAME
 
-![StartInterface](/home/germanoanselmi/Scaricati/README/immagine_iniziale.png  "StartInterface") 
+![ ](/home/germanoanselmi/Scaricati/README/immagine_iniziale.png  "StartInterface") 
  
 Once the program runs you will start the initial game screen, where you have the option to enter the names of the two players, view the color of your checker, view the game instructions, once you have done that you must remember to save, using the *"save"* button to keep the names entered. 
 It is also possible to reload a previously saved game, in case of failure to save will open an error window.
@@ -55,7 +55,7 @@ Once all this is done you can start the game via the *"start"* button.
 
 ### WITHIN THE GAME
 
-![Game](/home/germanoanselmi/Scaricati/README/immagine_dopo.png  "Game") 
+![ ](/home/germanoanselmi/Scaricati/README/immagine_dopo.png  "Game") 
 
 Once you click on Start you will open another window where there is the blue game* "chessboard"* with all white circles, depending on the button you click *(present at the bottom and ranging from 1 to 7)*, will be colored a circle according to the color of the player, starting from the first row at the bottom upwards.In addition to this is the "pause" button, if you click on the latter, it will open another window where you can: *"save", "save and exit", "exit ".*
 
