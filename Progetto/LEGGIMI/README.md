@@ -1,6 +1,6 @@
 # CONNECT 4
 
-![Connect4](/home/germanoanselmi/Scaricati/README/connect-4-g170f3efe1_640.jpg  "Connect-4")
+![Connect4](\home\germanoanselmi\Scaricati\README\connect-4-g170f3efe1_640.jpg  "Connect-4")
 
 ## GAME DESCRIPTION
 
