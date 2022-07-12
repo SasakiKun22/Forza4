@@ -26,11 +26,11 @@ The winner is the player who first aligns four pieces of the same colour horizon
 ### PURPOSE
 
 The aim of the game is to be able to align four pieces of the same color in the game board either vertically, horizontally or obliquely.
-For more information about the board game click [here](https://www.migliorigiochi.eu/giochi/giochi-abilita/forza-4/)
+For more information about the board game click [here](https://www.gamesver.com/the-rules-of-connect-4-according-to-m-bradley-hasbro/)
 
-## PROGRAMME DESCRIPTION
+## PROGRAM DESCRIPTION
 
-### EXECUTION OF THE PROGRAMME
+### EXECUTION OF THE PROGRAM
 
 Before running the program make sure that:
 
