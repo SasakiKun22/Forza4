@@ -43,8 +43,8 @@ To run the program there are two ways:
 - by clicking on the jar file
 - alternatively if you are on:
   - **LINUX:** opening the terminal and typing: `java -jar path/to/jarfile.jar`
-  - **WINDOWS:** opening the cmd and typing: `java –jar path/to/jarfile.jar`
-  - **MAC:** opening the terminal and typing: `java -jar path/to/jarfile.jar`
+  - **WINDOWS:** opening the cmd and typing: `–jar c: path to jar`
+  - **MAC:** opening the terminal and typing: `java -jar path to jar file.jar`
 
 ### START THE GAME
 
