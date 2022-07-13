@@ -58,7 +58,7 @@ Once all this is done you can start the game via the *"start"* button.
 
 ### WITHIN THE GAME
 
-![Game](images/SchermataInzialeBegin.png) 
+![Game](images/SchermataInizialeBegin.png) 
 
 Once you click on Start you will open another window where there is the blue game* "chessboard"* with all white circles, depending on the button you click *(present at the bottom and ranging from 1 to 7)*, will be colored a circle according to the color of the player, starting from the first row at the bottom upwards.In addition to this is the "pause" button, if you click on the latter, it will open another window where you can: *"save", "save and exit", "exit ".*
 
