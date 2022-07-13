@@ -49,6 +49,7 @@ To run the program there are two ways:
   - **MAC:** opening the terminal and typing: `java -jar path to jar file.jar`
 
 ### 
+
 ### START THE GAME
 
 ![StartInterface](images/InTheGame.png) 
