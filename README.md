@@ -48,7 +48,7 @@ To run the program there are two ways:
   - **WINDOWS:** opening the cmd and typing: `java –jar c: path to jar`
   - **MAC:** opening the terminal and typing: `java -jar path to jar file.jar`
 
-###1
+#### 1
 
 ### START THE GAME
 
@@ -72,4 +72,4 @@ The project is finished but is always open for changes.
 
 *MATTIA DI MARCO, GERMANO ANSELMI*
 
-###2
+#### 2
