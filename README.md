@@ -48,7 +48,7 @@ To run the program there are two ways:
   - **WINDOWS:** opening the cmd and typing: `java –jar c: path to jar`
   - **MAC:** opening the terminal and typing: `java -jar path to jar file.jar`
 
->
+><
 
 ### START THE GAME
 
